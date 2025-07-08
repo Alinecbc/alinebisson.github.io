@@ -1,0 +1,264 @@
+/* Fonte e reset básico para o site */
+body {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+  scroll-behavior: smooth;
+  font-weight: 300; /* letras mais finas */
+}
+
+/* Estilização do cabeçalho fixo no topo */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #333;
+  color: #fff;
+  padding: 10px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* nome à esquerda e menu à direita */
+  z-index: 1000;
+  border-bottom: 1.5px solid #444;
+}
+
+header h1 {
+  font-size: 22px;
+  margin: 0;
+  font-weight: 300;
+}
+
+/* Menu de navegação estilo horizontal */
+header nav {
+  display: flex;
+  gap: 40px;
+}
+
+/* Links do menu com transição suave no hover */
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 5px 10px;
+  transition: font-size 0.3s ease-in-out;
+}
+
+header nav a:hover {
+  background: #555;
+  border-radius: 4px;
+}
+
+/* Estilo geral das seções do site */
+section {
+  padding: 100px 20px 60px;
+  max-width: 900px;
+  margin: 0 auto 40px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+/* Container da seção Sobre, usa flexbox para layout */
+.sobre-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 50px;
+  padding: 80px 20px 20px;
+  background-color: white;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Foto de perfil com bordas arredondadas e sombra */
+.foto-perfil {
+  width: 350px;  /* tamanho da imagem */
+  height: auto;
+  border-radius: 15%; /* cantos arredondados */
+  object-fit: cover;
+  box-shadow: 0 0 6px rgba(0,0,0,0.2);
+}
+
+/* Texto da seção Sobre com espaçamento e fonte legível */
+.texto-sobre {
+  flex: 1;
+  min-width: 300px;
+  max-width: 700px;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+}
+
+/* Container dos hobbies com layout flexível */
+.hobbies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: -80px;
+  padding: 10px 0 0 0;
+}
+
+/* Estilo comum das imagens dos hobbies */
+.hobby-img {
+  border-radius: 12px;
+  filter: grayscale(100%);
+  opacity: 0.85;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  object-fit: contain;
+}
+
+/* Efeito hover para destacar imagem do hobby */
+.hobby-img:hover {
+  transform: scale(1.15);
+  opacity: 1;
+}
+
+/* Tamanhos específicos para cada imagem de hobby */
+.livros {
+  width: 160px;
+  height: auto;
+}
+
+.fones {
+  width: 100px;
+  height: auto;
+}
+
+.filme {
+  width: 120px;
+  height: auto;
+}
+
+.mundo {
+  width: 150px;
+  height: auto;
+}
+
+.estudos {
+  width: 120px;
+  height: auto;
+}
+
+.ingles {
+  width: 90px;
+  height: auto;
+}
+
+/* Estilo das seções de formação, portfólio e contato */
+.formacao {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  max-width: 900px;
+  margin: 0 auto 40px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px; /* texto um pouco menor */
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.portfolio {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  max-width: 900px;
+  margin: 0 auto 40px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.contato {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  max-width: 900px;
+  margin: 0 auto 40px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+/* Formulário de contato com layout vertical */
+.contato form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Estilo dos campos do formulário */
+.contato input,
+.contato textarea {
+  font-family: inherit;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Botão do formulário com cor neutra */
+.contato button {
+  width: fit-content;
+  padding: 10px 20px;
+  border: none;
+  background: #999;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Botão muda cor ao passar o mouse */
+.contato button:hover {
+  background: #666;
+}
+
+/* Link do GitHub com estilo */
+.github-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 600;
+  color: #3366cc;
+  text-decoration: none;
+  font-size: 16px;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.github-link:hover {
+  border-bottom: 1px solid #3366cc;
+}
+
+/* Estilo da seção de trabalhos da faculdade */
+#trabalhos {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px 30px;
+  max-width: 700px;
+  margin: 40px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Lista dentro dos trabalhos */
+#trabalhos ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Espaçamento entre itens da lista */
+#trabalhos li {
+  margin-bottom: 12px;
+}

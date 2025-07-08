@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfólio | Aline Bisson</title>
+  <link rel="stylesheet" href="portfolio.css" />
+  <style>
+    @keyframes vibrate {
+      0% { transform: translate(0); }
+      20% { transform: translate(-2px, 2px); }
+      40% { transform: translate(-2px, -2px); }
+      60% { transform: translate(2px, 2px); }
+      80% { transform: translate(2px, -2px); }
+      100% { transform: translate(0); }
+    }
+
+    /* Animação de vibração */
+    .vibrate {
+      animation: vibrate 0.4s linear;
+    }
+
+    /* Estilo para mensagem de sucesso do formulário */
+    .mensagem-sucesso {
+      display: none;
+      margin-top: 10px;
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Aline Bisson</h1>
+    <nav>
+      <!-- Navegação pelas seções do site -->
+      <a href="#sobre">Sobre</a>
+      <a href="#formacao">Formação</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre" class="sobre-container">
+      <!-- Minha foto -->
+      <img src="aline2.jpg" alt="Foto da Aline" class="foto-perfil" />
+
+      <div class="texto-sobre">
+        <h2>Olá! Eu sou Aline</h2>
+        <!-- Texto de apresentação -->
+        <p>
+          Tenho 26 anos e sou de Curitiba. Atualmente trabalho em uma central de distribuição de medicamentos e venho buscando ampliar meus horizontes profissionais por meio de novos aprendizados e experiências. Tenho um perfil mais reservado e costumo aproveitar meu tempo livre em casa, assistindo a séries, filmes e documentários, além de ler e ouvir música — atividades que me proporcionam momentos de relaxamento e enriquecimento pessoal.
+        </p>
+
+        <p>
+          Embora seja mais introspectiva, gosto de viajar e de conhecer novos lugares. Este ano realizarei minha primeira viagem internacional, com destino à Europa, o que representa a realização de um grande sonho. Tenho muito interesse em explorar culturas diferentes, compreendendo melhor seus idiomas, costumes, religiões e gastronomias. Pretendo futuramente visitar outros países em diferentes partes do mundo, como forma de ampliar minha visão de mundo. Acredito que esse tipo de vivência contribui de forma significativa para o crescimento pessoal e também para uma atuação mais sensível e consciente na vida profissional.
+        </p>
+      </div>
+
+      <!-- Figuras que representam alguns dos meus hobbies -->
+      <div class="hobbies">
+        <img src="livros.png" class="hobby-img livros" alt="Livros" />
+        <img src="fones.png" class="hobby-img fones" alt="Fones" />
+        <img src="filmes.png" class="hobby-img filme" alt="Filmes" />
+        <img src="mundo.png" class="hobby-img mundo" alt="Mundo" />
+        <img src="estudos.png" class="hobby-img estudos" alt="Estudos" />
+        <img src="ingles.png" class="hobby-img ingles" alt="Inglês" />
+      </div>
+    </section>
+
+    <section id="formacao" class="formacao">
+      <h2>Formação e Atuação Profissional</h2>
+      <!-- Lista da formação acadêmica e atuação -->
+      <ul>
+        <li>Graduada em Farmácia pela Universidade Federal do Paraná (UFPR), com conclusão há dois anos.</li>
+        <li>Pós-graduada em Análises Clínicas e Toxicológicas, com foco em aprofundar conhecimentos na área laboratorial.</li>
+        <li>Atuação atual como farmacêutica na rede pública, contribuindo com responsabilidade e dedicação para o cuidado à saúde da população.</li>
+      </ul>
+
+      <h2>Idiomas</h2>
+      <!-- Lista de idiomas -->
+      <ul>
+        <li>Conhecimento em inglês em nível intermediário.</li>
+        <li>Em constante aprimoramento da língua, reconhecendo sua importância em contextos profissionais diversos.</li>
+      </ul>
+
+      <h2>Transição e Ampliação de Áreas</h2>
+      <!-- Informações atuais  -->
+      <ul>
+        <li>Início do curso de Análise e Desenvolvimento de Sistemas (ADS) em 2025.</li>
+        <li>Interesse em expandir conhecimentos e integrar a tecnologia à formação em Farmácia.</li>
+        <li>Aberta à possibilidade de migrar de área, buscando novas oportunidades e desafios.</li>
+        <li>Comprometida com o desenvolvimento contínuo, tanto na área de TI quanto no aperfeiçoamento do inglês, com foco em construir uma trajetória profissional mais ampla e versátil.</li>
+      </ul>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+      <h2>Portfólio</h2>
+      <p>Confira meus projetos e trabalhos no meu GitHub:</p>
+      <a href="https://github.com/alinecbc" target="_blank" rel="noopener noreferrer" class="github-link">
+        https://github.com/alinecbc
+      </a>
+
+      <section id="trabalhos" style="margin-top: 40px;">
+        <h3>💼 Alguns dos meus trabalhos de programação desenvolvidos:</h3>
+        <ul style="margin-top: 15px; line-height: 1.6; padding-left: 20px; color: #333;">
+          <li>
+            <strong>trab.py:</strong> Desenvolvimento de um app para empresa atacadista que oferece descontos progressivos conforme o valor da compra. Neste trabalho, implementei a lógica para cálculo de descontos e interação com o usuário via terminal.
+          </li>
+          <li>
+            <strong>trabalho2.py:</strong> Parte da interface do cliente para uma loja de Açaí e Cupuaçu, focando na retirada do produto. O código trata de entrada de dados e cálculo simples para facilitar o atendimento ao cliente.
+          </li>
+          <li>
+            <strong>trabalho3.py:</strong> Desenvolvimento da interface para funcionários em um sistema de cobrança de serviços de uma copiadora. O programa processa listas de dados e auxilia na organização dos serviços prestados.
+          </li>
+          <li>
+            <strong>trabalho4.py:</strong> Software de gerenciamento de livros para uma pequena empresa, com menu e opções básicas para cadastro e consulta de livros. O trabalho foca na validação e organização dos dados de entrada.
+          </li>
+        </ul>
+      </section>
+    </section>
+
+    <section id="contato" class="contato">
+      <h2>Contato</h2>
+      <!-- Formulário de contato -->
+      <form id="form-contato">
+        <label>Nome:</label>
+        <input type="text" name="nome" required />
+
+        <label>Email:</label>
+        <input type="email" name="email" required />
+
+        <label>Mensagem:</label>
+        <textarea name="mensagem" rows="5"></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+      <!-- Mensagem exibida após envio do formulário -->
+      <p class="mensagem-sucesso" id="mensagem-sucesso">Mensagem enviada com sucesso! Aguarde a resposta por e-mail.</p>
+    </section>
+  </main>
+
+  <script>
+    // alerta de boas-vindas quando a página carrega
+    window.addEventListener('load', () => {
+      alert('Seja bem-vindo ao portfólio de Aline Bisson!');
+    });
+
+    // Seleciona todas as imagens dos hobbies para aplicar efeitos
+    document.querySelectorAll('.hobby-img').forEach(img => {
+      // Aumenta a imagem quando o mouse passa por cima
+      img.addEventListener('mouseenter', () => {
+        img.style.transform = 'scale(1.15)';
+        img.style.opacity = '1';
+      });
+
+      // Volta a imagem ao tamanho original quando o mouse sai
+      img.addEventListener('mouseleave', () => {
+        img.style.transform = 'scale(1)';
+        img.style.opacity = '0.85';
+      });
+
+      // Aplica a animação de vibração ao clicar na imagem
+      img.addEventListener('click', () => {
+        img.classList.add('vibrate');
+        setTimeout(() => img.classList.remove('vibrate'), 400);
+      });
+    });
+
+    // Seleciona o formulário e a mensagem de sucesso para manipulação
+    const form = document.getElementById('form-contato');
+    const msg = document.getElementById('mensagem-sucesso');
+
+    // Evento para envio do formulário sem recarregar a página
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      msg.style.display = 'block'; // Exibe mensagem de sucesso
+      form.reset(); // Limpa os campos do formulário
+    });
+
+    // Aguarda o carregamento do conteúdo da página
+    window.addEventListener('DOMContentLoaded', () => {
+      // Seleciona os links do menu de navegação
+      const navLinks = document.querySelectorAll('header nav a');
+
+      // Para cada link, aumenta o tamanho da fonte quando passa o mouse
+      navLinks.forEach(link => {
+        link.addEventListener('mouseenter', () => {
+          link.style.fontSize = '22px';
+        });
+
+        // Volta ao tamanho original quando o mouse sai
+        link.addEventListener('mouseleave', () => {
+          link.style.fontSize = '18px';
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
